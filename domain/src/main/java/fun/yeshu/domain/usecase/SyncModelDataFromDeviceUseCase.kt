@@ -21,5 +21,4 @@ class SyncModelDataFromDeviceUseCase(
         // 同步成功返回结果
         return Pair(true, System.currentTimeMillis())
     }
-
 }

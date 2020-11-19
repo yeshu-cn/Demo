@@ -13,6 +13,6 @@ class SyncModelDataFromServerUseCase(
         // 从服务端获取数据
         val data = modelRepository.getDataFromServer()
         // 处理数据，并保存在本地
-        modelRepository.insertDataToLocal(data);
+        modelRepository.insertDataToLocal(data)
     }
 }

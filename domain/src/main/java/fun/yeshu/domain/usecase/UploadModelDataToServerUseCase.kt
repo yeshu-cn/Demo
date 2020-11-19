@@ -10,7 +10,7 @@ class UploadModelDataToServerUseCase(
 ) {
     suspend fun execute() {
         // 获取需要上传等数据
-        val data = modelRepository.queryDataListByXX()
+        val data = modelRepository.queryDataList()
         // 上传数据到服务器
         modelRepository.uploadDataToServer(data)
     }

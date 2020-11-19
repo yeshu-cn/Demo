@@ -10,9 +10,9 @@ import `fun`.yeshu.domain.repository.ModelRepository
 class QueryModelUseCase(
     private val modelRepository: ModelRepository
 ) {
-    suspend fun execute(id: Int): Model? {
+    suspend fun execute(time: Long): Model? {
         // 初始化查询条件
         // 根据条件进行查询
-        return modelRepository.queryDataByXX()
+        return modelRepository.queryDataByTime(time)
     }
 }

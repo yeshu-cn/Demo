@@ -33,13 +33,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="goToModelListActivity"
-        android:text="ModelListActivity"
+        android:text="Model 列表页面"
         tools:ignore="HardcodedText" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="goToModelDetailActivity"
-        android:text="ModelDetailActivity"
+        android:text="Model 详情页面"
         tools:ignore="HardcodedText" />
 </LinearLayout>

@@ -13,6 +13,6 @@ class QueryModelListDataUseCase(
     suspend fun execute(): List<Model> {
         // 初始化查询条件
         // 根据条件进行查询
-        return modelRepository.queryDataListByXX()
+        return modelRepository.queryDataList()
     }
 }

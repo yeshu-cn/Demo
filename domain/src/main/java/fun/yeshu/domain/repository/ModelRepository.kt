@@ -16,12 +16,12 @@ interface ModelRepository {
     /**
      * 查询特定条件的Model数据
      */
-    suspend fun queryDataByXX(): Model?
+    suspend fun queryDataByTime(time: Long): Model?
 
     /**
      * 查询特定条件的Model数据列表
      */
-    suspend fun queryDataListByXX(): List<Model>
+    suspend fun queryDataList(): List<Model>
 
     /**
      * 上传数据到服务器

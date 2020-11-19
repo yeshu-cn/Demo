@@ -17,11 +17,11 @@ class ModelRepositoryImpl(
         TODO("Not yet implemented")
     }
 
-    override suspend fun queryDataByXX(): Model? {
+    override suspend fun queryDataByTime(): Model? {
         TODO("Not yet implemented")
     }
 
-    override suspend fun queryDataListByXX(): List<Model> {
+    override suspend fun queryDataList(): List<Model> {
         TODO("Not yet implemented")
     }
 

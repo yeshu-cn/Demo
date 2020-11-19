@@ -17,7 +17,7 @@ class FakeModelRepositoryImpl(
         return remoteDataSource
     }
 
-    override suspend fun queryDataByXX(): Model? {
+    override suspend fun queryDataByTime(): Model? {
         return if (localDataSource.isEmpty()) {
             null
         } else {
@@ -25,7 +25,7 @@ class FakeModelRepositoryImpl(
         }
     }
 
-    override suspend fun queryDataListByXX(): List<Model> {
+    override suspend fun queryDataList(): List<Model> {
         return emptyList()
     }
 
