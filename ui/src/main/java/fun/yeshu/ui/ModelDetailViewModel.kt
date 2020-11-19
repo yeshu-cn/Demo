@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 class ModelDetailViewModel (
     private val useCase: QueryModelUseCase
 ) : ViewModel() {
-    val data = MutableLiveData<Model>()
+    val data = MutableLiveData<Model?>()
 
     fun loadData() {
         viewModelScope.launch {

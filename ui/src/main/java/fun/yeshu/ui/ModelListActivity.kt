@@ -20,6 +20,8 @@ class ModelListActivity : AppCompatActivity() {
             it ==null
             showModelList(it)
         })
+
+        viewModel.loadData()
     }
 
     private fun showModelList(data: List<Model>) {

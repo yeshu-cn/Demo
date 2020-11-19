@@ -11,7 +11,7 @@ class WebApiImpl: WebApi {
         TODO("Not yet implemented")
     }
 
-    override suspend fun getModel(time: Long): ModelApiBean {
+    override suspend fun getModel(time: Long): ModelApiBean? {
         TODO("Not yet implemented")
     }
 }

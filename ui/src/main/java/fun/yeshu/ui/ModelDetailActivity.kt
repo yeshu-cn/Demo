@@ -18,11 +18,13 @@ class ModelDetailActivity : AppCompatActivity() {
         viewModel.data.observe(this, androidx.lifecycle.Observer {
             showModelDetail(it)
         })
+
+        viewModel.loadData()
     }
 
-    private fun showModelDetail(model: Model) {
-        model_detail_value.text = "value:" + model.value
-        model_detail_time.text = "time:" + model.time
+    private fun showModelDetail(model: Model?) {
+        model_detail_value.text = "value:" + model?.value
+        model_detail_time.text = "time:" + model?.time
 
     }
 }

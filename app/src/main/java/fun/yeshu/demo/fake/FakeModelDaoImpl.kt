@@ -7,7 +7,7 @@ class FakeModelDaoImpl : ModelDao {
     private val cache = ArrayList<ModelDaoBean>()
 
     override suspend fun queryModel(time: Long): ModelDaoBean? {
-        return cache.first {
+        return cache.find {
             it.time == time
         }
     }

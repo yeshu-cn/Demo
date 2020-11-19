@@ -7,5 +7,5 @@ interface WebApi {
 
     suspend fun uploadModelList(modelList: List<ModelApiBean>)
 
-    suspend fun getModel(time: Long): ModelApiBean
+    suspend fun getModel(time: Long): ModelApiBean?
 }

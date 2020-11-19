@@ -16,8 +16,8 @@ class FakeWebApiImpl : WebApi {
         cache.addAll(modelList)
     }
 
-    override suspend fun getModel(time: Long): ModelApiBean {
-        return cache.first {
+    override suspend fun getModel(time: Long): ModelApiBean? {
+        return cache.find {
             it.time == time
         }
     }
