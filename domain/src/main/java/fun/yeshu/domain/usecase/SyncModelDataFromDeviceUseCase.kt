@@ -11,9 +11,9 @@ class SyncModelDataFromDeviceUseCase(
     /**
      * 同步设备数据，成功返回true 和 同步时间
      */
-    suspend fun execute(): Pair<Boolean, Long> {
+    suspend fun execute(time: Long): Pair<Boolean, Long> {
         // 获取设备数据
-        val data = modelRepository.getDataFromDevice()
+        val data = modelRepository.getDataFromDevice(time)
         // 保存数据到本地
         modelRepository.insertDataToLocal(data)
         // 保存数据到云端
