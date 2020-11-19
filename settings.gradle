@@ -1,0 +1,5 @@
+include ':data'
+include ':ui'
+include ':domain'
+include ':app'
+rootProject.name = "Demo"
