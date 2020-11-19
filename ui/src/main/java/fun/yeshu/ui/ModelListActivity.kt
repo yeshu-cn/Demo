@@ -19,7 +19,7 @@ class ModelListActivity : AppCompatActivity() {
     }
 
     private fun showModelList(data: List<Model>) {
-        // todo 更新界面
+        // todo 更新界面UI
     }
 
 }
