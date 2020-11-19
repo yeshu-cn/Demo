@@ -1,3 +1,5 @@
 package `fun`.yeshu.data.remote.bean
 
-class ModelApiBean {}
+data class ModelApiBean(
+    val time: Long, val value: Int = 0
+)

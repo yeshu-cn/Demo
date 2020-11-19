@@ -1,5 +1,8 @@
 package `fun`.yeshu.data
 
+import `fun`.yeshu.data.converter.toModel
+import `fun`.yeshu.data.converter.toModelApiBean
+import `fun`.yeshu.data.converter.toModelDaoBean
 import `fun`.yeshu.data.device.DeviceApi
 import `fun`.yeshu.data.local.ModelDao
 import `fun`.yeshu.data.remote.WebApi
@@ -9,28 +12,35 @@ import `fun`.yeshu.domain.repository.ModelRepository
 class ModelRepositoryImpl(
     private val deviceApi: DeviceApi, private val webApi: WebApi, private val modelDao: ModelDao
 ) : ModelRepository {
-    override suspend fun getDataFromDevice(): List<Model> {
-        TODO("Not yet implemented")
+    override suspend fun getDataFromDevice(time: Long): List<Model> {
+        val deviceData = deviceApi.getModelData(time)
+        return deviceData.map {
+            it.toModel()
+        }
     }
 
     override suspend fun getDataFromServer(): List<Model> {
-        TODO("Not yet implemented")
+        val remoteData = webApi.getModelList(0, System.currentTimeMillis())
+        return remoteData.map {
+            it.toModel()
+        }
     }
 
     override suspend fun queryDataByTime(time: Long): Model? {
-        TODO("Not yet implemented")
+        return modelDao.queryModel(time)?.toModel()
     }
 
     override suspend fun queryDataList(): List<Model> {
-        TODO("Not yet implemented")
+        return modelDao.queryModelList().map { it.toModel() }
     }
 
     override suspend fun uploadDataToServer(data: List<Model>): Boolean {
-        TODO("Not yet implemented")
+        webApi.uploadModelList(data.map { it.toModelApiBean() })
+        return true
     }
 
     override suspend fun insertDataToLocal(data: List<Model>) {
-        TODO("Not yet implemented")
+        modelDao.insertModelList(data.map { it.toModelDaoBean() })
     }
 
 

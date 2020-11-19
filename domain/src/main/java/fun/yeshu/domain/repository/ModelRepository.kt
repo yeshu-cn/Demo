@@ -6,7 +6,7 @@ interface ModelRepository {
     /**
      * 从设备获取数据
      */
-    suspend fun getDataFromDevice(): List<Model>
+    suspend fun getDataFromDevice(time: Long): List<Model>
 
     /**
      * 从服务端拉数据

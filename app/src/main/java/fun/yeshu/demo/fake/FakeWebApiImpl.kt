@@ -4,15 +4,21 @@ import `fun`.yeshu.data.remote.WebApi
 import `fun`.yeshu.data.remote.bean.ModelApiBean
 
 class FakeWebApiImpl : WebApi {
+    private val cache = ArrayList<ModelApiBean>()
+
     override suspend fun getModelList(startTime: Long, endTime: Long): List<ModelApiBean> {
-        TODO("Not yet implemented")
+        return cache.filter {
+            it.time in startTime..endTime
+        }
     }
 
     override suspend fun uploadModelList(modelList: List<ModelApiBean>) {
-        TODO("Not yet implemented")
+        cache.addAll(modelList)
     }
 
     override suspend fun getModel(time: Long): ModelApiBean {
-        TODO("Not yet implemented")
+        return cache.first {
+            it.time == time
+        }
     }
 }

@@ -10,6 +10,4 @@ interface ModelDao {
     suspend fun insertModel(model : ModelDaoBean)
 
     suspend fun insertModelList(modelList: List<ModelDaoBean>)
-
-    suspend fun updateModel(model: ModelDaoBean)
 }

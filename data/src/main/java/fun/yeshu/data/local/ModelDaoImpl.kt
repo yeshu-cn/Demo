@@ -18,8 +18,4 @@ class ModelDaoImpl: ModelDao {
     override suspend fun insertModelList(modelList: List<ModelDaoBean>) {
         TODO("Not yet implemented")
     }
-
-    override suspend fun updateModel(model: ModelDaoBean) {
-        TODO("Not yet implemented")
-    }
 }
