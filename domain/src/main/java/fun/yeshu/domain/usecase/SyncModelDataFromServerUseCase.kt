@@ -1,7 +1,6 @@
 package `fun`.yeshu.domain.usecase
 
 import `fun`.yeshu.domain.repository.ModelRepository
-import kotlin.coroutines.coroutineContext
 
 /**
  * 同步服务端数据
