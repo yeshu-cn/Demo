@@ -8,7 +8,7 @@ class FakeDeviceApiImpl : DeviceApi {
 
 
     init {
-
+        cache.addAll(MockDataUtils.obtainDeviceData(20))
     }
 
     override suspend fun getModelData(time: Long): List<ModelDeviceBean> {
