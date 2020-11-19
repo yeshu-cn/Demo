@@ -17,7 +17,7 @@ class ModelRepositoryImpl(
         TODO("Not yet implemented")
     }
 
-    override suspend fun queryDataByTime(): Model? {
+    override suspend fun queryDataByTime(time: Long): Model? {
         TODO("Not yet implemented")
     }
 
@@ -32,5 +32,6 @@ class ModelRepositoryImpl(
     override suspend fun insertDataToLocal(data: List<Model>) {
         TODO("Not yet implemented")
     }
+
 
 }

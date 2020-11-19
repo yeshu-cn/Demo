@@ -1,3 +1,7 @@
 package `fun`.yeshu.data.device
 
-interface DeviceApi {}
+import `fun`.yeshu.data.device.bean.ModelDeviceBean
+
+interface DeviceApi {
+    suspend fun getModelData(time: Long) : List<ModelDeviceBean>
+}
