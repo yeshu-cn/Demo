@@ -3,6 +3,7 @@ package `fun`.yeshu.demo
 
 import `fun`.yeshu.domain.model.Model
 import `fun`.yeshu.domain.usecase.SyncModelDataFromDeviceUseCase
+import `fun`.yeshu.domain.usecase.SyncModelDataFromServerUseCase
 import `fun`.yeshu.ui.ModelAdapter
 import `fun`.yeshu.ui.ModelListViewModel
 import android.os.Bundle
@@ -16,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_data_sync.*
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.getKoin
 
-class SyncDeviceDataActivity : AppCompatActivity() {
+class SyncServerDataActivity : AppCompatActivity() {
     private val viewModel: ModelListViewModel by viewModel()
     private val listAdapter by lazy { ModelAdapter() }
 
@@ -41,7 +42,7 @@ class SyncDeviceDataActivity : AppCompatActivity() {
         rv_list.layoutManager = manager
         rv_list.adapter = listAdapter
 
-        btn_sync.text = "本地数据为空，点击同步设备数据"
+        btn_sync.text = "本地数据为空，点击同步服务器数据"
         tv_message.text = "同步设备数据成功，显示数据"
     }
 
@@ -53,8 +54,8 @@ class SyncDeviceDataActivity : AppCompatActivity() {
 
     private fun syncDeviceData() {
         viewModel.viewModelScope.launch {
-            val useCase = getKoin().get<SyncModelDataFromDeviceUseCase>()
-            useCase.execute(System.currentTimeMillis())
+            val useCase = getKoin().get<SyncModelDataFromServerUseCase>()
+            useCase.execute()
             // 同步成功后，加载数据显示
             viewModel.loadData()
         }

@@ -10,43 +10,41 @@
         android:id="@+id/ll_sync_top"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
-        android:gravity="center">
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/btn_sync"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onClickSyncDeviceData"
+            android:layout_gravity="center"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
-            android:layout_gravity="center"
-            android:text="同步设备数据"
-            tools:ignore="HardcodedText" />
+            android:onClick="onClickSyncDeviceData"
+            tools:text="本地数据为空，点击同步设备数据" />
 
         <ProgressBar
             android:id="@+id/pb_sync"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/tv_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="同步成功！"
             android:visibility="gone"
-            tools:ignore="HardcodedText" />
+            tools:text="同步成功！" />
     </FrameLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/ll_sync_top"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_sync_top" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

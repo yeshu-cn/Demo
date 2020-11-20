@@ -7,6 +7,10 @@ import kotlinx.coroutines.delay
 class FakeWebApiImpl : WebApi {
     private val cache = ArrayList<ModelApiBean>()
 
+    init {
+        cache.addAll(MockDataUtils.obtainServerData(20))
+    }
+
     override suspend fun getModelList(startTime: Long, endTime: Long): List<ModelApiBean> {
         // 模拟耗时1秒
         delay(1000)

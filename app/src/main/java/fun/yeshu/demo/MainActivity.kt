@@ -18,10 +18,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickSyncDataWhenLogout(view: View) {
-
+        // todo
     }
 
-    fun onClickSyncDataToServer(view: View) {}
+    fun onClickSyncDataToServer(view: View) {
+        // todo
+    }
 
     fun goToModelListActivity(view: View) {
         startActivity(Intent(this, ModelListActivity::class.java))
@@ -31,5 +33,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, ModelDetailActivity::class.java))
     }
 
-    fun onClickSyncServerData(view: View) {}
+    fun onClickSyncServerData(view: View) {
+        startActivity(Intent(this, SyncServerDataActivity::class.java))
+    }
 }
