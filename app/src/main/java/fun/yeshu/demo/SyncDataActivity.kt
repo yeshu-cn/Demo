@@ -5,7 +5,6 @@ import `fun`.yeshu.domain.model.Model
 import `fun`.yeshu.domain.usecase.SyncModelDataFromDeviceUseCase
 import `fun`.yeshu.ui.ModelAdapter
 import `fun`.yeshu.ui.ModelListViewModel
-import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -47,7 +46,7 @@ class SyncDataActivity : AppCompatActivity() {
     fun onClickSyncDeviceData(view: View) {
         btn_sync.visibility = View.GONE
         pb_sync.visibility = View.VISIBLE
-        pb_sync.postDelayed(Runnable {
+        pb_sync.postDelayed({
             GlobalScope.launch {
                 /**
                  * 同步数据成功
