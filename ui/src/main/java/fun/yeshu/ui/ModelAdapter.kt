@@ -22,7 +22,7 @@ class ModelAdapter: RecyclerView.Adapter<ModelViewHolder>() {
         holder.bind(dataList[position])
     }
 
-    fun setData(newDataList: List<Model>) {
+     fun setData(newDataList: List<Model>) {
         dataList.apply {
             clear()
             addAll(newDataList)

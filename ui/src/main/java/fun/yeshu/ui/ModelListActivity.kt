@@ -19,7 +19,6 @@ class ModelListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_model_list)
         initView()
         viewModel.data.observe(this, Observer {
-            it == null
             showModelList(it)
         })
 
