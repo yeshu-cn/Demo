@@ -42,7 +42,7 @@ class SyncDeviceDataActivity : AppCompatActivity() {
         rv_list.adapter = listAdapter
 
         btn_sync.text = "本地数据为空，点击同步设备数据"
-        tv_message.text = "同步设备数据成功，显示数据"
+        tv_message.text = "同步设备数据成功，数据已保存到了本地和服务端"
     }
 
     fun onClickSyncDeviceData(view: View) {

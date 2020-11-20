@@ -13,7 +13,7 @@ class FakeWebApiImpl : WebApi {
 
     override suspend fun getModelList(startTime: Long, endTime: Long): List<ModelApiBean> {
         // 模拟耗时1秒
-        delay(1000)
+        delay(1500)
         return cache.filter {
             it.time in startTime..endTime
         }
