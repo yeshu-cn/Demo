@@ -1,6 +1,7 @@
 package `fun`.yeshu.ui
 
 import `fun`.yeshu.domain.model.Model
+import `fun`.yeshu.ui.uitls.TimeFormatUtils
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -36,10 +37,7 @@ class ModelViewHolder(parent: ViewGroup)
     fun bind(item: Model) {
         itemView.apply {
             model_item_value.text = "value:" + item.value
-            model_item_time.text = "time:" + item.time
-
-            setOnClickListener {
-            }
+            model_item_time.text = TimeFormatUtils.formatTime(item.time)
         }
     }
 

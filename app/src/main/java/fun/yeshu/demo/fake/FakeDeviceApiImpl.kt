@@ -12,6 +12,7 @@ class FakeDeviceApiImpl : DeviceApi {
     }
 
     override suspend fun getModelData(time: Long): List<ModelDeviceBean> {
+        // 模拟耗时1秒
         return mutableListOf<ModelDeviceBean>().apply { addAll(cache) }
     }
 }

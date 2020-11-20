@@ -42,4 +42,6 @@ class MainActivity : AppCompatActivity() {
     fun goToModelDetailActivity(view: View) {
         startActivity(Intent(this, ModelDetailActivity::class.java))
     }
+
+    fun onClickSyncServerData(view: View) {}
 }
