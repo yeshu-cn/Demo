@@ -9,7 +9,7 @@ class FakeModelRepositoryImpl(
     private val deviceDataSource: ArrayList<Model>
 ) : ModelRepository {
 
-    override suspend fun getDataFromDevice(): List<Model> {
+    override suspend fun getDataFromDevice(time: Long): List<Model> {
         return deviceDataSource
     }
 
@@ -17,7 +17,7 @@ class FakeModelRepositoryImpl(
         return remoteDataSource
     }
 
-    override suspend fun queryDataByTime(): Model? {
+    override suspend fun queryDataByTime(time: Long): Model? {
         return if (localDataSource.isEmpty()) {
             null
         } else {

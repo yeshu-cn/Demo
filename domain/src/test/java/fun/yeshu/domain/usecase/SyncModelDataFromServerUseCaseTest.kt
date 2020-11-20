@@ -29,7 +29,7 @@ class SyncModelDataFromServerUseCaseTest {
         deviceDataSource.clear()
 
         val useCase = SyncModelDataFromDeviceUseCase(modelRepository)
-        val result = useCase.execute()
+        val result = useCase.execute(System.currentTimeMillis())
         assertThat(result.first).isTrue()
 
         assertThat(localDataSource).isEmpty()
@@ -51,7 +51,7 @@ class SyncModelDataFromServerUseCaseTest {
 
         // 同步数据
         val useCase = SyncModelDataFromDeviceUseCase(modelRepository)
-        val result = useCase.execute()
+        val result = useCase.execute(System.currentTimeMillis())
 
         // 验证结果
         assertThat(result.first).isTrue()

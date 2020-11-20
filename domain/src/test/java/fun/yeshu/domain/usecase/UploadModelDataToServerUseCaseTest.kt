@@ -6,7 +6,6 @@ import com.google.common.truth.Truth
 import kotlinx.coroutines.runBlocking
 import org.junit.Test
 
-import org.junit.Assert.*
 import org.junit.Before
 
 class UploadModelDataToServerUseCaseTest {
