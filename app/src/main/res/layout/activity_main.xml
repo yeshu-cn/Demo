@@ -23,35 +23,35 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickSyncServerData"
+        android:text="获取云端数据"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="onClickSyncDataWhenLogout"
-        android:text="退出时同步上传未同步的数据"
+        android:text="上传数据到云端：退出时同步上传"
         tools:ignore="HardcodedText" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClickSyncDataToServer"
-        android:text="后台异步上传本地数据到云端"
-        tools:ignore="HardcodedText" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onClickSyncServerData"
-        android:text="下拉服务器数据"
+        android:text="上传数据到云端：后台线程中异步上传"
         tools:ignore="HardcodedText" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="goToModelListActivity"
-        android:text="Model 列表页面"
+        android:text="展示数据列表页面"
         tools:ignore="HardcodedText" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="goToModelDetailActivity"
-        android:text="Model 详情页面"
+        android:text="展示数据详情页面"
         tools:ignore="HardcodedText" />
 </LinearLayout>

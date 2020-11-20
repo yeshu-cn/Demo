@@ -1,6 +1,7 @@
 package `fun`.yeshu.demo
 
 import `fun`.yeshu.ui.ModelDetailActivity
+import `fun`.yeshu.ui.ModelListActivity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,15 +14,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickSyncDeviceData(view: View) {
-        startActivity(Intent(this, SyncDataActivity::class.java))
+        startActivity(Intent(this, SyncDeviceDataActivity::class.java))
     }
 
     fun onClickSyncDataWhenLogout(view: View) {
 
     }
+
     fun onClickSyncDataToServer(view: View) {}
+
     fun goToModelListActivity(view: View) {
-        startActivity(Intent(this, SyncDataActivity::class.java))
+        startActivity(Intent(this, ModelListActivity::class.java))
     }
 
     fun goToModelDetailActivity(view: View) {

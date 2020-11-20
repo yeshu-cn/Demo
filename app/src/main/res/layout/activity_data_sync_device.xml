@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SyncDataActivity">
+    tools:context=".SyncDeviceDataActivity">
 
     <FrameLayout
         android:id="@+id/ll_sync_top"
@@ -22,7 +22,8 @@
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             android:layout_gravity="center"
-            android:text="同步设备数据"/>
+            android:text="同步设备数据"
+            tools:ignore="HardcodedText" />
 
         <ProgressBar
             android:id="@+id/pb_sync"
@@ -37,7 +38,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="同步成功！"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
     </FrameLayout>
 
     <androidx.recyclerview.widget.RecyclerView
