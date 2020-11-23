@@ -9,7 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_model_list.rv_list
 import org.koin.android.viewmodel.ext.android.viewModel
 
-
+/**
+ * 显示业务数据列表页面
+ */
 class ModelListActivity : AppCompatActivity() {
     private val viewModel: ModelListViewModel by viewModel()
     private val listAdapter by lazy { ModelAdapter() }

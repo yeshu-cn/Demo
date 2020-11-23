@@ -9,6 +9,9 @@ import `fun`.yeshu.data.remote.WebApi
 import `fun`.yeshu.domain.model.Model
 import `fun`.yeshu.domain.repository.ModelRepository
 
+/**
+ * 业务数据资源库的实现类
+ */
 class ModelRepositoryImpl(
     private val deviceApi: DeviceApi, private val webApi: WebApi, private val modelDao: ModelDao
 ) : ModelRepository {

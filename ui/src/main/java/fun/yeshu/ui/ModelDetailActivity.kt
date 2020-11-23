@@ -6,6 +6,9 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_model_detail.*
 import org.koin.android.viewmodel.ext.android.viewModel
 
+/**
+ * 显示单个业务数据详情页面
+ */
 class ModelDetailActivity : AppCompatActivity() {
     private val viewModel: ModelDetailViewModel by viewModel()
 
