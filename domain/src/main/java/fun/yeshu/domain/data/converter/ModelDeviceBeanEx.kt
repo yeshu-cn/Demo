@@ -1,6 +1,6 @@
-package `fun`.yeshu.data.converter
+package `fun`.yeshu.domain.data.converter
 
-import `fun`.yeshu.data.device.bean.ModelDeviceBean
+import `fun`.yeshu.domain.data.device.bean.ModelDeviceBean
 import `fun`.yeshu.domain.model.Model
 
 fun ModelDeviceBean.toModel(): Model {

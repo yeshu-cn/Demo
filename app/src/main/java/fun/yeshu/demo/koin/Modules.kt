@@ -1,9 +1,9 @@
 package `fun`.yeshu.demo.koin
 
 import `fun`.yeshu.data.ModelRepositoryImpl
-import `fun`.yeshu.data.device.DeviceApi
-import `fun`.yeshu.data.local.ModelDao
-import `fun`.yeshu.data.remote.WebApi
+import `fun`.yeshu.domain.data.device.DeviceApi
+import `fun`.yeshu.domain.data.local.ModelDao
+import `fun`.yeshu.domain.data.remote.WebApi
 import `fun`.yeshu.demo.fake.FakeDeviceApiImpl
 import `fun`.yeshu.demo.fake.FakeModelDaoImpl
 import `fun`.yeshu.demo.fake.FakeWebApiImpl

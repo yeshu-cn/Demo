@@ -1,4 +1,4 @@
-package `fun`.yeshu.data.device.bean
+package `fun`.yeshu.domain.data.device.bean
 
 /**
  * 设备解析用到的数据模型

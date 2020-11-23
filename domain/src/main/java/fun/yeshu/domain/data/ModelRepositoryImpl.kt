@@ -1,11 +1,11 @@
 package `fun`.yeshu.data
 
-import `fun`.yeshu.data.converter.toModel
-import `fun`.yeshu.data.converter.toModelApiBean
-import `fun`.yeshu.data.converter.toModelDaoBean
-import `fun`.yeshu.data.device.DeviceApi
-import `fun`.yeshu.data.local.ModelDao
-import `fun`.yeshu.data.remote.WebApi
+import `fun`.yeshu.domain.data.converter.toModel
+import `fun`.yeshu.domain.data.converter.toModelApiBean
+import `fun`.yeshu.domain.data.converter.toModelDaoBean
+import `fun`.yeshu.domain.data.device.DeviceApi
+import `fun`.yeshu.domain.data.local.ModelDao
+import `fun`.yeshu.domain.data.remote.WebApi
 import `fun`.yeshu.domain.model.Model
 import `fun`.yeshu.domain.repository.ModelRepository
 

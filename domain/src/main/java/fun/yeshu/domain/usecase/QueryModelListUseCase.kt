@@ -7,7 +7,7 @@ import `fun`.yeshu.domain.repository.ModelRepository
 /**
  * 获取业务数据列表
  */
-class QueryModelListDataUseCase(
+class QueryModelListUseCase(
     private val modelRepository: ModelRepository
 ) {
     suspend fun execute(): List<Model> {

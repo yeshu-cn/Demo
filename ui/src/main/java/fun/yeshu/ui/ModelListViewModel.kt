@@ -1,15 +1,14 @@
 package `fun`.yeshu.ui
 
 import `fun`.yeshu.domain.model.Model
-import `fun`.yeshu.domain.usecase.QueryModelListDataUseCase
-import `fun`.yeshu.domain.usecase.QueryModelUseCase
+import `fun`.yeshu.domain.usecase.QueryModelListUseCase
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 
 class ModelListViewModel(
-    private val useCase: QueryModelListDataUseCase
+    private val useCase: QueryModelListUseCase
 ) : ViewModel() {
     val data = MutableLiveData<List<Model>>()
 

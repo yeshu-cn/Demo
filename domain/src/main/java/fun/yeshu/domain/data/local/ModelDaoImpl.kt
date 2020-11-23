@@ -1,4 +1,4 @@
-package `fun`.yeshu.data.local
+package `fun`.yeshu.domain.data.local
 
 import `fun`.yeshu.data.local.bean.ModelDaoBean
 
