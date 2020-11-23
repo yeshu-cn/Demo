@@ -1,4 +1,3 @@
-include ':data'
 include ':ui'
 include ':domain'
 include ':app'
