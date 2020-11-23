@@ -1,7 +1,7 @@
 package `fun`.yeshu.demo.fake
 
-import `fun`.yeshu.data.remote.WebApi
-import `fun`.yeshu.data.remote.bean.ModelApiBean
+import `fun`.yeshu.domain.data.remote.WebApi
+import `fun`.yeshu.domain.data.remote.bean.ModelApiBean
 import kotlinx.coroutines.delay
 
 class FakeWebApiImpl : WebApi {

@@ -1,6 +1,6 @@
 package `fun`.yeshu.demo.fake
 
-import `fun`.yeshu.data.local.ModelDao
+import `fun`.yeshu.domain.data.local.ModelDao
 import `fun`.yeshu.data.local.bean.ModelDaoBean
 
 class FakeModelDaoImpl : ModelDao {

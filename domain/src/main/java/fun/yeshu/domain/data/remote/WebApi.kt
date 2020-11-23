@@ -1,6 +1,6 @@
-package `fun`.yeshu.data.remote
+package `fun`.yeshu.domain.data.remote
 
-import `fun`.yeshu.data.remote.bean.ModelApiBean
+import `fun`.yeshu.domain.data.remote.bean.ModelApiBean
 
 /**
  * 定义获取服务端数据的接口，负责获取服务器上的业务数据

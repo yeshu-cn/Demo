@@ -1,7 +1,7 @@
 package `fun`.yeshu.demo.fake
 
-import `fun`.yeshu.data.device.DeviceApi
-import `fun`.yeshu.data.device.bean.ModelDeviceBean
+import `fun`.yeshu.domain.data.device.DeviceApi
+import `fun`.yeshu.domain.data.device.bean.ModelDeviceBean
 import kotlinx.coroutines.delay
 
 class FakeDeviceApiImpl : DeviceApi {

@@ -1,6 +1,6 @@
 package `fun`.yeshu.ui.koin
 
-import `fun`.yeshu.domain.usecase.QueryModelListDataUseCase
+import `fun`.yeshu.domain.usecase.QueryModelListUseCase
 import `fun`.yeshu.domain.usecase.QueryModelUseCase
 import `fun`.yeshu.domain.usecase.SyncModelDataFromDeviceUseCase
 import `fun`.yeshu.domain.usecase.SyncModelDataFromServerUseCase
@@ -41,7 +41,7 @@ val modelModule = module {
     }
 
     factory {
-        QueryModelListDataUseCase(getKoin().modelScope().get())
+        QueryModelListUseCase(getKoin().modelScope().get())
     }
 
     viewModel {

@@ -1,6 +1,6 @@
-package `fun`.yeshu.data.remote
+package `fun`.yeshu.domain.data.remote
 
-import `fun`.yeshu.data.remote.bean.ModelApiBean
+import `fun`.yeshu.domain.data.remote.bean.ModelApiBean
 
 class WebApiImpl: WebApi {
     override suspend fun getModelList(startTime: Long, endTime: Long): List<ModelApiBean> {

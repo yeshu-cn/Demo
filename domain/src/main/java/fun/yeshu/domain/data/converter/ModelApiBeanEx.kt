@@ -1,6 +1,6 @@
-package `fun`.yeshu.data.converter
+package `fun`.yeshu.domain.data.converter
 
-import `fun`.yeshu.data.remote.bean.ModelApiBean
+import `fun`.yeshu.domain.data.remote.bean.ModelApiBean
 import `fun`.yeshu.domain.model.Model
 
 fun ModelApiBean.toModel(): Model {
