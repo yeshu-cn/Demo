@@ -10,11 +10,11 @@ class FakeModelRepositoryImpl(
 ) : ModelRepository {
 
     override suspend fun getDataFromDevice(time: Long): List<Model> {
-        return deviceDataSource
+        return mutableListOf<Model>().apply { addAll(deviceDataSource) }
     }
 
     override suspend fun getDataFromServer(): List<Model> {
-        return remoteDataSource
+        return mutableListOf<Model>().apply { addAll(remoteDataSource) }
     }
 
     override suspend fun queryDataByTime(time: Long): Model? {
@@ -26,7 +26,7 @@ class FakeModelRepositoryImpl(
     }
 
     override suspend fun queryDataList(): List<Model> {
-        return emptyList()
+        return mutableListOf<Model>().apply { addAll(localDataSource) }
     }
 
     override suspend fun uploadDataToServer(data: List<Model>): Boolean {

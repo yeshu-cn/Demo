@@ -5,7 +5,6 @@ import `fun`.yeshu.domain.repository.ModelRepository
 import kotlinx.coroutines.runBlocking
 import org.junit.Test
 
-import org.junit.Assert.*
 import org.junit.Before
 import com.google.common.truth.Truth.assertThat
 
