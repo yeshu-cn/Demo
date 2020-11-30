@@ -24,6 +24,7 @@ feature:
 * 分层结构的代码，各个角色职责明确：Model,Repository,Service,UseCase
 * 数据bean归类：ModelBean,DaoBean,ApiBean,DeviceBean
 * mock数据进行单元测试
+* 编码时mock依赖数据
 * domain中不使用koin, 只在ui层和宿主app中才使用
 
 
