@@ -20,4 +20,11 @@ Model : 业务模型名称
 * 展示本地数据详情
 
 
-说明：不想生成太多到lib文件，所以最终data module的代码最终会移动到domain moduel中
+feature:
+* 分层结构的代码，各个角色职责明确：Model,Repository,Service,UseCase
+* 数据bean归类：ModelBean,DaoBean,ApiBean,DeviceBean
+* mock数据进行单元测试
+* domain中不使用koin, 只在ui层和宿主app中才使用
+
+
+说明：完整的代码在simple分支中，因为不想生成太多到lib文件，所以把data module的代码移动到domain moduel中
