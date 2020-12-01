@@ -26,6 +26,7 @@ feature:
 * mock数据进行单元测试
 * 编码时mock依赖数据
 * domain中不使用koin, 只在ui层和宿主app中才使用
+* 所有协程方法都是供主线程调用安全的
 
 
 说明：完整的代码在simple分支中，因为不想生成太多到lib文件，所以把data module的代码移动到domain moduel中
