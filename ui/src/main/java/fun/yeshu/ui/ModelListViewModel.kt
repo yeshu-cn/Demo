@@ -8,13 +8,13 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 
 class ModelListViewModel(
-    private val useCase: QueryModelListUseCase
-) : ViewModel() {
-    val data = MutableLiveData<List<Model>>()
+        private val useCase: QueryModelListUseCase
+    ) : ViewModel() {
+        val data = MutableLiveData<List<Model>>()
 
-    fun loadData() {
-        viewModelScope.launch {
-            data.value = useCase.execute()
+        fun loadData() {
+            viewModelScope.launch {
+                data.value = useCase.execute()
+            }
         }
-    }
 }

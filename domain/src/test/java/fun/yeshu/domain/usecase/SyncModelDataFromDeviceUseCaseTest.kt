@@ -8,7 +8,7 @@ import org.junit.Test
 import org.junit.Before
 import com.google.common.truth.Truth.assertThat
 
-class SyncModelDataFromServerUseCaseTest {
+class SyncModelDataFromDeviceUseCaseTest {
     private lateinit var modelRepository: ModelRepository
     private val localDataSource = ArrayList<Model>()
     private val remoteDataSource = ArrayList<Model>()
