@@ -3,7 +3,7 @@
     package="fun.yeshu.ui">
 
     <application>
-        <activity android:name=".ModelDetailActivity"></activity>
+        <activity android:name=".ModelDetailActivity"/>
         <activity android:name=".ModelListActivity" />
     </application>
 

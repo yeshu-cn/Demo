@@ -1,6 +1,6 @@
 package `fun`.yeshu.domain.data.local
 
-import `fun`.yeshu.data.local.bean.ModelDaoBean
+import `fun`.yeshu.domain.data.local.bean.ModelDaoBean
 
 /**
  * 定义获取本地数据库的增删改查接口，负责获取本地的业务数据

@@ -1,4 +1,4 @@
-package `fun`.yeshu.data
+package `fun`.yeshu.domain.data
 
 import `fun`.yeshu.domain.data.converter.toModel
 import `fun`.yeshu.domain.data.converter.toModelApiBean

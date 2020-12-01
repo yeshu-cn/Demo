@@ -1,7 +1,7 @@
 package `fun`.yeshu.demo.fake
 
 import `fun`.yeshu.domain.data.local.ModelDao
-import `fun`.yeshu.data.local.bean.ModelDaoBean
+import `fun`.yeshu.domain.data.local.bean.ModelDaoBean
 
 class FakeModelDaoImpl : ModelDao {
     private val cache = ArrayList<ModelDaoBean>()

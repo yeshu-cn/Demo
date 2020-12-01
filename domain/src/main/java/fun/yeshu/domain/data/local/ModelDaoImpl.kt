@@ -1,6 +1,6 @@
 package `fun`.yeshu.domain.data.local
 
-import `fun`.yeshu.data.local.bean.ModelDaoBean
+import `fun`.yeshu.domain.data.local.bean.ModelDaoBean
 
 class ModelDaoImpl: ModelDao {
     override suspend fun queryModel(time: Long): ModelDaoBean? {
