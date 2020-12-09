@@ -1,6 +1,6 @@
-package `fun`.yeshu.domain.repository
+package `fun`.yeshu.domain.entity.repository
 
-import `fun`.yeshu.domain.model.Model
+import `fun`.yeshu.domain.entity.model.Model
 
 /**
  * 业务Model的资源库，作为数据源，定义Model的增删改查接口

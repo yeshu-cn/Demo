@@ -1,7 +1,7 @@
 package `fun`.yeshu.domain.usecase
 
-import `fun`.yeshu.domain.model.Model
-import `fun`.yeshu.domain.repository.ModelRepository
+import `fun`.yeshu.domain.entity.model.Model
+import `fun`.yeshu.domain.entity.repository.ModelRepository
 
 
 /**

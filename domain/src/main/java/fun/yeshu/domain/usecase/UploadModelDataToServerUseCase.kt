@@ -1,6 +1,6 @@
 package `fun`.yeshu.domain.usecase
 
-import `fun`.yeshu.domain.repository.ModelRepository
+import `fun`.yeshu.domain.entity.repository.ModelRepository
 
 /**
  * 上传数据到服务器

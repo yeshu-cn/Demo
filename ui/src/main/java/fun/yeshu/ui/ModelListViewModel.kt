@@ -1,6 +1,6 @@
 package `fun`.yeshu.ui
 
-import `fun`.yeshu.domain.model.Model
+import `fun`.yeshu.domain.entity.model.Model
 import `fun`.yeshu.domain.usecase.QueryModelListUseCase
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

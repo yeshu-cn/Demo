@@ -1,4 +1,4 @@
-package `fun`.yeshu.domain.model
+package `fun`.yeshu.domain.entity.model
 
 /**
  * 业务数据统计模型(常见的日，周，月年等数据统计)

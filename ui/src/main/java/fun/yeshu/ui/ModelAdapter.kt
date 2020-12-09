@@ -1,6 +1,6 @@
 package `fun`.yeshu.ui
 
-import `fun`.yeshu.domain.model.Model
+import `fun`.yeshu.domain.entity.model.Model
 import `fun`.yeshu.ui.uitls.TimeFormatUtils
 import android.view.LayoutInflater
 import android.view.ViewGroup

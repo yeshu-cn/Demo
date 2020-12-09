@@ -6,8 +6,8 @@ import `fun`.yeshu.domain.data.converter.toModelDaoBean
 import `fun`.yeshu.domain.data.device.DeviceApi
 import `fun`.yeshu.domain.data.local.ModelDao
 import `fun`.yeshu.domain.data.remote.WebApi
-import `fun`.yeshu.domain.model.Model
-import `fun`.yeshu.domain.repository.ModelRepository
+import `fun`.yeshu.domain.entity.model.Model
+import `fun`.yeshu.domain.entity.repository.ModelRepository
 
 /**
  * 业务数据资源库的实现类

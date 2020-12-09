@@ -1,8 +1,8 @@
 package `fun`.yeshu.domain.usecase
 
-import `fun`.yeshu.domain.model.ModelStatisticsInfo
-import `fun`.yeshu.domain.repository.ModelRepository
-import `fun`.yeshu.domain.service.ModelService
+import `fun`.yeshu.domain.entity.model.ModelStatisticsInfo
+import `fun`.yeshu.domain.entity.repository.ModelRepository
+import `fun`.yeshu.domain.entity.service.ModelService
 
 /**
  * 获取业务数据相关的统计结果

@@ -1,4 +1,4 @@
-package `fun`.yeshu.domain.model
+package `fun`.yeshu.domain.entity.model
 
 /**
  * 描述：业务模型

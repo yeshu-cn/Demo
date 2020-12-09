@@ -1,6 +1,6 @@
 package `fun`.yeshu.ui
 
-import `fun`.yeshu.domain.model.Model
+import `fun`.yeshu.domain.entity.model.Model
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_model_detail.*

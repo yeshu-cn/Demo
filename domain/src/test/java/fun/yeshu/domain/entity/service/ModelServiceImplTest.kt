@@ -1,6 +1,6 @@
-package `fun`.yeshu.domain.service
+package `fun`.yeshu.domain.entity.service
 
-import `fun`.yeshu.domain.model.Model
+import `fun`.yeshu.domain.entity.model.Model
 import org.junit.Test
 import com.google.common.truth.Truth.assertThat
 

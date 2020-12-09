@@ -1,7 +1,7 @@
-package `fun`.yeshu.domain.service
+package `fun`.yeshu.domain.entity.service
 
-import `fun`.yeshu.domain.model.Model
-import `fun`.yeshu.domain.model.ModelStatisticsInfo
+import `fun`.yeshu.domain.entity.model.Model
+import `fun`.yeshu.domain.entity.model.ModelStatisticsInfo
 
 /**
  * 描述：Model相关的业务服务

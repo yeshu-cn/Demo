@@ -3,7 +3,7 @@ package `fun`.yeshu.demo.fake
 import `fun`.yeshu.domain.data.converter.toModelApiBean
 import `fun`.yeshu.domain.data.device.bean.ModelDeviceBean
 import `fun`.yeshu.domain.data.remote.bean.ModelApiBean
-import `fun`.yeshu.domain.model.Model
+import `fun`.yeshu.domain.entity.model.Model
 import java.util.*
 import kotlin.collections.ArrayList
 

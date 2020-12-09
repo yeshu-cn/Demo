@@ -1,7 +1,7 @@
 package `fun`.yeshu.demo
 
 
-import `fun`.yeshu.domain.model.Model
+import `fun`.yeshu.domain.entity.model.Model
 import `fun`.yeshu.domain.usecase.SyncModelDataFromDeviceUseCase
 import `fun`.yeshu.ui.ModelAdapter
 import `fun`.yeshu.ui.ModelListViewModel
